@@ -1,18 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="utf-8" />
-  <title>OzPerks – Cashback & Deals</title>
+  <title>OzPerks - Australia Cashback Comparison App | Best Rates &amp; Deals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Get the best cashback rates and OzBargain deals together in one slick app. Free to download, no account required." />
+  <meta name="description" content="Compare cashback rates across Australian providers in one free app. OzPerks tracks cashback rates, historic trends, and OzBargain deals so you always pick the highest payout." />
+  <meta name="keywords" content="cashback, cashback comparison, cashback Australia, best cashback rates, compare cashback, OzBargain deals, cashback tracker" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="OzPerks" />
+  <link rel="canonical" href="https://www.ozperks.com.au/" />
 
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="icon" type="image/png" href="https://www.ozperks.com.au/logo.png" />
+  <link rel="apple-touch-icon" href="https://www.ozperks.com.au/logo.png" />
 
-  <meta property="og:title" content="OzPerks – Cashback & Deals" />
-  <meta property="og:description" content="Get the best cashback rates and OzBargain deals together in one slick app." />
-  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_AU" />
+  <meta property="og:url" content="https://www.ozperks.com.au/" />
+  <meta property="og:site_name" content="OzPerks" />
+  <meta property="og:title" content="OzPerks - Australia Cashback Comparison App" />
+  <meta property="og:description" content="Compare cashback rates across Australian providers. Track historic trends, get alerts, and never miss a better payout." />
+  <meta property="og:image" content="https://www.ozperks.com.au/ss1.png" />
+  <meta property="og:image:alt" content="OzPerks cashback comparison app screenshot" />
+
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OzPerks - Australia Cashback Comparison App" />
+  <meta name="twitter:description" content="Compare cashback rates across Australian providers. Free app, no account required." />
+  <meta name="twitter:image" content="https://www.ozperks.com.au/ss1.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.ozperks.com.au/#website",
+        "url": "https://www.ozperks.com.au/",
+        "name": "OzPerks",
+        "description": "Australian cashback comparison app that helps you find the best cashback rates and deals.",
+        "inLanguage": "en-AU",
+        "publisher": { "@id": "https://www.ozperks.com.au/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.ozperks.com.au/#organization",
+        "name": "OzPerks",
+        "url": "https://www.ozperks.com.au/",
+        "logo": "https://www.ozperks.com.au/logo.png",
+        "email": "luupapps@gmail.com"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "OzPerks",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "iOS, Android",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "AUD"
+        },
+        "description": "Compare Australian cashback rates side by side, track historic trends, and get alerts when rates hit your target. Includes OzBargain deal alerts.",
+        "url": "https://www.ozperks.com.au/",
+        "image": "https://www.ozperks.com.au/ss1.png",
+        "downloadUrl": [
+          "https://apps.apple.com/au/app/pelicash/id6746528566",
+          "https://play.google.com/store/apps/details?id=com.luupapps.pelicash"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a cashback comparison app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A cashback comparison app shows cashback rates from multiple providers for the same store, so you can choose the highest payout before you shop. OzPerks is built for Australian shoppers and compares rates across major cashback sites."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does OzPerks compare cashback providers like ShopBack and TopCashback?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. OzPerks is designed to help you compare cashback rates across popular Australian cashback providers so you can see which site offers the best rate for a given store at any time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is OzPerks free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. OzPerks is free to download on iOS and Android, with no account required to start comparing cashback rates and deals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get the best cashback rate in Australia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rates change often across cashback sites. Compare providers before you buy, check historic trends, and set alerts for your target rate so you shop when the payout is highest."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -621,6 +714,80 @@
 
     .cta-features svg { color: #a78bfa; flex-shrink: 0; }
 
+    /* ── Comparison ── */
+    .compare-section {
+      padding: 5.5rem 0;
+      background: linear-gradient(180deg, var(--slate-50) 0%, #fff 100%);
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .compare-body {
+      max-width: 40rem;
+      margin: 0 auto;
+      font-size: 1.0625rem;
+      color: var(--slate-600);
+      line-height: 1.75;
+    }
+
+    .compare-body p { margin: 0 0 1.25rem; }
+    .compare-body p:last-child { margin-bottom: 0; }
+    .compare-body strong { color: var(--slate-800); font-weight: 600; }
+
+    /* ── FAQ ── */
+    .faq-section {
+      padding: 5.5rem 0;
+    }
+
+    .faq-list {
+      max-width: 44rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.025rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: "+";
+      flex-shrink: 0;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--purple);
+      line-height: 1;
+    }
+
+    .faq-item[open] summary::after { content: "−"; }
+
+    .faq-item p {
+      margin: 0;
+      padding: 0 1.5rem 1.25rem;
+      font-size: 0.975rem;
+      color: var(--slate-600);
+      line-height: 1.7;
+    }
+
     /* ── Footer ── */
     .footer {
       padding: 4rem 0 2.5rem;
@@ -729,6 +896,8 @@
       </a>
       <div class="nav-links">
         <a href="#features">Features</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
         <a href="#download">Download</a>
         <a href="mailto:luupapps@gmail.com">Contact</a>
       </div>
@@ -747,11 +916,11 @@
         </div>
 
         <h1 class="hero-title">
-          Track, compare, <span class="gradient">save more</span>
+          Australian cashback <span class="gradient">comparison</span>
         </h1>
 
         <p class="hero-subtitle">
-          Unlock the best cashback rates with data-driven intelligence. OzPerks brings together top cashback providers and OzBargain deals. <strong>Just download and start saving.</strong>
+          Compare cashback rates across providers, track historic trends, and catch OzBargain deals in one free app. <strong>Just download and start saving.</strong>
         </p>
 
         <div class="hero-cta">
@@ -824,7 +993,7 @@
         <span class="section-eyebrow">Features</span>
         <h2 class="section-title">Master your savings strategy</h2>
         <p class="section-subtitle">
-          OzPerks gives you complete visibility into cashback opportunities and deal alerts, helping you optimise your spending for maximum savings across all your purchases.
+          OzPerks gives you clear cashback comparison and deal alerts, so you can pick the highest payout before you shop.
         </p>
       </div>
 
@@ -836,8 +1005,8 @@
             </svg>
           </div>
           <div class="feature-content">
-            <h3>Best Cashback Rates</h3>
-            <p>Automatically find and apply the highest cashback rates from multiple providers, so you never miss a savings opportunity.</p>
+            <h3>Cashback comparison</h3>
+            <p>See cashback rates side by side across Australian providers, so you never miss a better payout for the same store.</p>
           </div>
         </div>
 
@@ -861,9 +1030,59 @@
           </div>
           <div class="feature-content">
             <h3>Smart Notifications</h3>
-            <p>Receive personalised alerts when stores offer your desired cashback rates — right when it matters.</p>
+            <p>Receive personalised alerts when stores offer your desired cashback rates, right when it matters.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare-section" id="compare">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Cashback comparison</span>
+        <h2 class="section-title">Why compare cashback rates?</h2>
+        <p class="section-subtitle">
+          The same store often pays different cashback rates on different sites. A quick comparison can mean extra dollars back on every purchase.
+        </p>
+      </div>
+      <div class="compare-body">
+        <p>
+          Australian shoppers often bounce between cashback sites looking for the best rate. Rates change frequently, and the highest payout is not always on the same provider. OzPerks is a <strong>cashback comparison</strong> app built for Australia. It helps you check rates across providers, watch historic trends, and get alerts when a store hits your target.
+        </p>
+        <p>
+          If you already use popular cashback sites, OzPerks sits beside them: compare before you click through, then shop via the provider with the best rate. Pair that with OzBargain deal alerts and you can stack discounts with cashback more confidently.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-title">Cashback questions, answered</h2>
+        <p class="section-subtitle">
+          Quick answers about cashback comparison in Australia and how OzPerks works.
+        </p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>What is a cashback comparison app?</summary>
+          <p>A cashback comparison app shows rates from multiple providers for the same store, so you can choose the highest payout before you shop. OzPerks is built for Australian shoppers and compares rates across major cashback sites.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does OzPerks compare providers like ShopBack and TopCashback?</summary>
+          <p>Yes. OzPerks helps you compare cashback rates across popular Australian cashback providers so you can see which site offers the best rate for a given store at any time. Mentions of other brands are for comparison context only. OzPerks is an independent comparison tool.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is OzPerks free to use?</summary>
+          <p>Yes. OzPerks is free to download on iOS and Android, with no account required to start comparing cashback rates and deals.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I get the best cashback rate in Australia?</summary>
+          <p>Rates change often across cashback sites. Compare providers before you buy, check historic trends, and set alerts for your target rate so you shop when the payout is highest.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -911,7 +1130,7 @@
         </div>
       </div>
       <p class="footer-disclosure">OzPerks is a participant in the Amazon Associates Programme. As an Amazon Associate, we earn from qualifying purchases. This means we may earn a commission if you buy something through links on this site or in the OzPerks app, at no extra cost to you.</p>
-      <p class="footer-copy">Copyright © 2025 OzPerks. All rights reserved.</p>
+      <p class="footer-copy">Copyright © 2026 OzPerks. All rights reserved.</p>
     </div>
   </footer>
 
