@@ -814,12 +814,7 @@
     (function () {
       var video = document.getElementById('hero-video');
       if (!video) return;
-      var conn = navigator.connection || {};
-      var wantsVideo =
-        window.matchMedia('(min-width: 960px)').matches &&
-        !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
-        !conn.saveData;
-      if (!wantsVideo) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       video.addEventListener('loadeddata', function () {
         video.classList.add('is-ready');
       });
