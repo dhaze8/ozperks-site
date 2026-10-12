@@ -46,7 +46,7 @@
         "name": "OzPerks",
         "url": "https://www.ozperks.com.au/",
         "logo": "https://www.ozperks.com.au/logo.png",
-        "email": "luupapps@gmail.com"
+        "email": "hello@ozperks.com.au"
       },
       {
         "@type": "SoftwareApplication",
@@ -289,36 +289,6 @@
 
     @media (min-width: 1024px) {
       .hero-text { text-align: left; }
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(196, 181, 253, 0.6);
-      border-radius: 9999px;
-      padding: 0.4375rem 1rem 0.4375rem 0.75rem;
-      margin-bottom: 1.75rem;
-      font-size: 0.8125rem;
-      font-weight: 600;
-      color: var(--purple-dark);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .pulse-dot {
-      width: 7px;
-      height: 7px;
-      background: var(--purple);
-      border-radius: 50%;
-      box-shadow: 0 0 0 0 rgba(123, 44, 191, 0.5);
-      animation: pulse-ring 2s infinite;
-    }
-
-    @keyframes pulse-ring {
-      0% { box-shadow: 0 0 0 0 rgba(123, 44, 191, 0.45); }
-      70% { box-shadow: 0 0 0 8px rgba(123, 44, 191, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(123, 44, 191, 0); }
     }
 
     .hero-title {
@@ -788,6 +758,79 @@
       line-height: 1.7;
     }
 
+    /* ── Reviews ── */
+    .reviews-section {
+      padding: 5.5rem 0;
+      background: linear-gradient(180deg, #fff 0%, var(--slate-50) 100%);
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .review-card {
+      background: #fff;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+
+    .review-card:hover {
+      border-color: rgba(123, 44, 191, 0.25);
+      box-shadow: var(--shadow-md);
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 0.2rem;
+      color: #f59e0b;
+    }
+
+    .review-stars svg { width: 14px; height: 14px; }
+
+    .review-card blockquote {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--slate-600);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .review-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+      padding-top: 0.25rem;
+      border-top: 1px solid var(--slate-100);
+    }
+
+    .review-author {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .review-date {
+      font-size: 0.75rem;
+      color: var(--slate-400);
+      font-weight: 500;
+    }
+
     /* ── Footer ── */
     .footer {
       padding: 4rem 0 2.5rem;
@@ -896,10 +939,11 @@
       </a>
       <div class="nav-links">
         <a href="#features">Features</a>
+        <a href="#reviews">Reviews</a>
         <a href="#compare">Compare</a>
         <a href="#faq">FAQ</a>
         <a href="#download">Download</a>
-        <a href="mailto:luupapps@gmail.com">Contact</a>
+        <a href="#contact">Contact</a>
       </div>
       <a href="#download" class="nav-download">Get the app</a>
     </div>
@@ -910,11 +954,6 @@
     <div class="hero-grid"></div>
     <div class="hero-inner">
       <div class="hero-text">
-        <div class="hero-badge">
-          <div class="pulse-dot"></div>
-          <span>Free to download · No account needed</span>
-        </div>
-
         <h1 class="hero-title">
           Australian cashback <span class="gradient">comparison</span>
         </h1>
@@ -933,6 +972,10 @@
         </div>
 
         <ul class="hero-perks">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Free to download, no account needed
+          </li>
           <li>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             Multiple cashback providers
@@ -1037,6 +1080,111 @@
     </div>
   </section>
 
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">App Store and Play Store reviews</span>
+        <h2 class="section-title">Loved by Australian savers</h2>
+        <p class="section-subtitle">
+          Real feedback from people using OzPerks to save more.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>Great app! Use this daily to keep up to date on all my bargains and love being able to see all the upsized cashbacks as well as creating alerts for specific deals. App is constantly being fixed for bugs and features being improved and added all the time.</blockquote>
+          <div class="review-meta">
+            <span class="review-author">Kevin Wong</span>
+            <span class="review-date">August 23, 2026</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>Best app for Ozbargain, cashback and churning features! App developer is super responsive to feedback and aims to provide the best experience for the users. Highly recommended!</blockquote>
+          <div class="review-meta">
+            <span class="review-author">Andy Sun</span>
+            <span class="review-date">October 8, 2026</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>I love the app. I love the way you can set up alerts when your favourite brands have big cash back offers. Great, handy app</blockquote>
+          <div class="review-meta">
+            <span class="review-author">Kimberley North</span>
+            <span class="review-date">October 6, 2026</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>Previously used Aussie Deals for years and this is a great improvement! Highly recommend.</blockquote>
+          <div class="review-meta">
+            <span class="review-author">Luke VB</span>
+            <span class="review-date">October 1, 2026</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>Much more reliable, faster and better then the official OzBargin app</blockquote>
+          <div class="review-meta">
+            <span class="review-author">Pev Hall</span>
+            <span class="review-date">September 18, 2026</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>It's very swift and looks to be very polished. Complete with Cashback rate, alert, search etc.</blockquote>
+          <div class="review-meta">
+            <span class="review-author">Adrian S</span>
+            <span class="review-date">July 11, 2026</span>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
   <section class="compare-section" id="compare">
     <div class="container">
       <div class="section-header">
@@ -1116,7 +1264,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <div class="footer-top">
         <a href="#" class="footer-brand">
@@ -1126,7 +1274,7 @@
         <div class="footer-links">
           <a href="https://privacy.ozperks.com.au/">Privacy Policy</a>
           <a href="https://tos.ozperks.com.au/">Terms of Service</a>
-          <a href="mailto:luupapps@gmail.com">Contact</a>
+          <a href="mailto:hello@ozperks.com.au">hello@ozperks.com.au</a>
         </div>
       </div>
       <p class="footer-disclosure">OzPerks is a participant in the Amazon Associates Programme. As an Amazon Associate, we earn from qualifying purchases. This means we may earn a commission if you buy something through links on this site or in the OzPerks app, at no extra cost to you.</p>
