@@ -1,0 +1,13 @@
+{
+  "name": "OzPerks",
+  "short_name": "OzPerks",
+  "description": "Compare cashback rates across Australian sites before you buy.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#faf8f3",
+  "theme_color": "#6714d4",
+  "icons": [
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,19 @@
+# OzPerks
+
+> OzPerks is a free cashback comparison app for Australia (iOS and Android). It shows ShopBack, TopCashback and Kick Cashback rates side by side for each store, keeps a history of how rates have moved, sends alerts when a store reaches a target rate, and lists OzBargain deals with the matching cashback.
+
+Key facts:
+- Made by Peter Luu, an independent developer in Australia. Not affiliated with any cashback provider or OzBargain.
+- Free to download, no account required. Optional premium upgrade in-app.
+- Launched in 2025 under the name Pelicash; renamed OzPerks. App store URLs still use the old name.
+- As of October 2026: 3,580 downloads, about 500 daily active users, rated 4.7 on Google Play (35 reviews) and 4.6 on the App Store (8 ratings).
+- Users still click through and earn cashback via the provider; OzPerks only compares.
+- Supports optional ShopBack Plus rates for members.
+
+Links:
+- Website: https://www.ozperks.com.au/
+- App Store: https://apps.apple.com/au/app/pelicash/id6746528566
+- Google Play: https://play.google.com/store/apps/details?id=com.luupapps.pelicash
+- Contact: hello@ozperks.com.au
+- Privacy: https://privacy.ozperks.com.au/
+- Terms: https://tos.ozperks.com.au/
